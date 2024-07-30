@@ -52,8 +52,8 @@ object Q1 {
 			println("ID: " + id," Name: " + name + " Quantity: " + quantity + "  price: " + price)
 		}
 		
-		println("\nEnter the product ID to check: ")
-        val productIdToCheck = readInt()
+		print("\nEnter the product ID to check: ")
+        val productIdToCheck = scala.io.StdIn.readInt()
         println(s"\nV. Checking for product with ID $productIdToCheck")
         inventory1.get(productIdToCheck) match {
             case Some((name, quantity, price)) =>
